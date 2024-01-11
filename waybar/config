@@ -42,20 +42,20 @@
 
      "custom/launcher": {
 	//"tooltip": false,
-	"format": "TGS",
+	"format": " 󰣇",
 	"on-click": "wofi --show drun",
 	"on-click-right": "killall wofi"
      },
 
      "cpu": {
 	"interval": 1,
-	"format" : "CPU {}%",
+	"format" : "  {}%",
 	"max-length": 10
      },
 
      "memory": {
 	"interval": 1,
-	"format": "RAM {}%",
+	"format": " {}%",
 	"max-length": 10
      },
 
@@ -83,7 +83,7 @@
      "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
-        "format-icons": ["Brightness"],
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
         "on-scroll-up": "brightnessctl set 5%+",
         "on-scroll-down": "brightnessctl set 5%-",
         "min-length": 6
